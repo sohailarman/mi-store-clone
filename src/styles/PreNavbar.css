@@ -1,0 +1,46 @@
+.preNav {
+
+    height: 40px;
+    line-height: 40px;
+    background-color: #212121;
+    z-index: 200;
+    position: relative;
+    min-width: 1226px;
+     
+}
+
+.preNav > div{
+
+max-width: 1226px;   
+margin: 0 auto; 
+}
+
+
+.preNav > div > a{
+
+color: #b0b0b0;
+margin: 0;
+padding: 0;
+text-decoration: none;
+background-color: transparent;
+font-size: 0.7rem;
+font-family: ProximaNova,Arial,sans-serif;
+font-weight: 400;
+
+}
+
+
+
+.preNav > div > span{
+padding: 18PX;
+color: rgb(180, 180, 180, 0.644);
+font-size: 0.75vmax;
+font-weight: 100;
+
+}
+
+.preNav > div > a:hover{
+
+    color: white;
+    
+}
