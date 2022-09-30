@@ -1,0 +1,125 @@
+.nav {
+    position: absolute;
+    height: 88px;
+    max-width: 1226px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.logo {
+
+    background-color: #FF6900;
+    width: 55px;
+    height: 54px;
+    border-radius: 19px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    align-self: center;
+
+}
+
+.navlinks {
+    margin-left: 20px;
+    align-self: center;
+    margin-right: auto;
+}
+
+.searchbox {
+  
+    align-self: center;
+
+}
+
+.searchbox > input {
+  
+    border: none;
+    border-bottom: 1px solid #474747;
+    background: transparent;
+    outline: none;
+    color: #474747;
+    
+
+}
+
+.searchbox > input::placeholder {
+  
+    
+    color: #474747;
+    
+
+}
+
+.searchbox-light > input::placeholder {
+  
+    
+    color: #fff;
+    
+
+}
+
+.searchbox-light > input {
+  
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    color: #fff;
+
+}
+
+
+
+#logoImage {
+    transition: all 0.2s;
+    transform: translateX(-57px);
+}
+
+#logoImage:hover {
+    transition: all 0.2s;
+    transform: translateX(0);
+}
+
+
+.searchIcon {
+    fill: #474747;
+}
+
+.searchIcon-light {
+    fill: #fff;
+}
+
+.navlink {
+    color: #474747;
+    font-family: ProximaNova,Arial,sans-serif;
+    font-size: 0.95rem;
+    font-weight: 450;
+    margin: 1vmax 1vmax;
+    text-decoration: none;
+}
+
+.navlink-light {
+    color: #fff;
+    font-family: ProximaNova,Arial,sans-serif;
+    font-size: 0.95rem;
+    font-weight: 350;
+    margin: 1vmax 1vmax;
+    text-decoration: none;
+}
+
+.navlink-light:hover {
+    color: #FF6900;
+    text-decoration: none;
+}
+
+.navlink:hover {
+    color: #FF6900;
+    text-decoration: none;
+}
+
+
+
