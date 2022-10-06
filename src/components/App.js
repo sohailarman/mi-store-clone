@@ -10,6 +10,8 @@ import Divider from "../components/Divider.js"
 import StarProduct from "../components/StarProduct.js"
 import HotAccessoriesMenu from "../components/HotAccessoriesMenu.js"
 import HotAccessories from "../components/HotAccessories.js";
+import ProductReviews from "../components/ProductReviews.js"
+import Videos from "../components/Videos.js"
 import data from "../data/data.json"
 
 
@@ -43,16 +45,18 @@ function App() {
     <Route exact path ="/home" element={  <HotAccessories home={data.hotAccessories.home} homeCover={data.hotAccessoriesCover.home} />  }  />
     <Route exact path ="/lifeStyle" element={  <HotAccessories lifeStyle={data.hotAccessories.lifeStyle} lifeStyleCover={data.hotAccessoriesCover.lifeStyle} />  }  />
     <Route exact path ="/mobileAccessories" element={  <HotAccessories mobileAccessories={data.hotAccessories.mobileAccessories} mobileAccessoriesCover={data.hotAccessoriesCover.mobileAccessories} />  }  />
-
-
     </Routes>
 
     <Divider text={"PRODUCT REVIEWS"}/>
 
-    
+    <ProductReviews productReviews={data.productReviews}/>
 
-    
-    
+    <Divider text={"VIDEOS"}/>
+
+    <Videos videos={data.videos}/>
+
+    <Divider text={"IN THE PRESS"}/>
+
     
   </Router>
   );
