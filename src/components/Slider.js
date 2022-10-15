@@ -7,7 +7,7 @@ import "../styles/slider.css"
 
 
 
-const Slider = ({toggleClass, setToggleClass, startImage}) => {
+const Slider = ({setToggleClass, startImage}) => {
 
   function getImageBrightness(image) {
 
@@ -67,7 +67,7 @@ const Slider = ({toggleClass, setToggleClass, startImage}) => {
 
   
 
-        <Carousel variant={"dark"} prevLabel={false} nextLabel={false} indicators={false} fade={true} interval={1000} 
+        <Carousel variant={"dark"} prevLabel={false} nextLabel={false} indicators={false} fade={true} interval={5000} 
         
         onSlid={(banner) => {
           

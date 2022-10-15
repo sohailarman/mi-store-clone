@@ -1,0 +1,86 @@
+.WrapperFooter {
+    background: rgb(37, 37, 37);
+}
+
+.Footer {
+    width: 1226px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr;
+    color: rgb(181, 181, 181);
+    
+}
+
+.Footer > div {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.5vmax;
+    padding-right: 20px;
+    margin-bottom: 1.5vmax;
+}
+
+.Footer > div > p {
+    font-size: 0.6vmax;
+    font-weight: 600;
+}
+
+.Footer > div:nth-child(2) {
+    display: block;
+}
+
+.Footer > div:nth-child(2) > a {
+    display: inline-block;
+}
+
+
+.Footer > div > a {
+    text-decoration: none;
+    color: rgb(181, 181, 181);
+    font-size: 0.5vmax;
+    margin-top: 15px;
+}
+
+.Footer > div > a:hover {
+    color: rgb(255, 255, 255);
+   
+}
+
+.Footer > div:last-child {
+    font-size: 0.45vmax;
+}
+
+.Footer > div:last-child > button {
+    width: 50%;
+    border: 1px solid white;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    padding: 0.4vmax;
+    margin-top: 0.7vmax;
+    font-size: 0.6vmax;
+    font-weight: 500; 
+
+    transition: all 0.5s;
+
+}
+
+.Footer > div:last-child > button:hover {
+    background-color: white;
+    color: rgb(37, 37, 37);
+
+}
+
+.footerBorder {
+    width: 1226px;
+    margin: 0 auto;
+    border-top: 1px solid rgba(197, 197, 197, 0.185);    
+
+}
+
+.footerBorder > div {
+    width: 1226px;
+    color: rgb(197, 197, 197);
+    width: 90vmax;
+    padding: 0.8vmax 0;
+    font-size: 0.5vmax;
+    margin: 0 auto;
+}

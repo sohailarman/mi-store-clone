@@ -4,6 +4,7 @@ import { BrowserRouter as Router} from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 import PreNavbar from "./PreNavbar.js";
 import NavBar from "./NavBar";
+import NavOptions from "../components/NavOptions.js"
 import Slider from "./Slider"
 import Offers from "./Offers.js"
 import Divider from "../components/Divider.js"
@@ -12,19 +13,41 @@ import HotAccessoriesMenu from "../components/HotAccessoriesMenu.js"
 import HotAccessories from "../components/HotAccessories.js";
 import ProductReviews from "../components/ProductReviews.js"
 import Videos from "../components/Videos.js"
+import Banner from "../components/Banner.js"
+import Footer from "../components/Footer.js"
 import data from "../data/data.json"
+
+
+
+
+
 
 
 function App() {
 
   const [toggleClass, setToggleClass] = useState(false);
+  const [navMenuPop, setNavMenuPop] = useState(false);
+
 
   return (
   <Router>
     
     <PreNavbar />
 
-    <NavBar toggleClass={toggleClass} logo={data.logo}/>
+    <NavBar toggleClass={toggleClass} setToggleClass={setToggleClass} logo={data.logo} navMenuPop={navMenuPop} setNavMenuPop={setNavMenuPop}/>
+
+    <Routes>
+    <Route path ="/" exact element={  <NavOptions setNavMenuPop={setNavMenuPop} navMenuPop={navMenuPop} xiaomiPhones={data.miPhones} />  }  />
+    <Route path ="/xiaomiPhones/" exact element={  <NavOptions setNavMenuPop={setNavMenuPop} navMenuPop={navMenuPop} xiaomiPhones={data.miPhones} />  }  />
+    <Route path ="/redmiPhones/" exact element={  <NavOptions setNavMenuPop={setNavMenuPop} navMenuPop={navMenuPop} redmiPhones={data.redmiPhones} />  }  />
+    <Route path ="/tv/" exact element={  <NavOptions setNavMenuPop={setNavMenuPop} navMenuPop={navMenuPop} tv={data.tv} />  }  />
+    <Route path ="/laptops/" exact element={  <NavOptions setNavMenuPop={setNavMenuPop} navMenuPop={navMenuPop} laptops={data.laptop} />  }  />
+    <Route path ="/accessories/" exact element={  <NavOptions setNavMenuPop={setNavMenuPop} navMenuPop={navMenuPop}  accessories={data.accessories} />  }  />
+    <Route path ="/home/" exact element={  <NavOptions setNavMenuPop={setNavMenuPop} navMenuPop={navMenuPop} home={data.home} />  }  />
+    <Route path ="/audio/" exact element={  <NavOptions setNavMenuPop={setNavMenuPop} navMenuPop={navMenuPop} audio={data.audio}/>  }  />
+    </Routes>
+
+    
 
     <Slider toggleClass={toggleClass} setToggleClass={setToggleClass} startImage={data.banner.start} />
 
@@ -57,9 +80,14 @@ function App() {
 
     <Divider text={"IN THE PRESS"}/>
 
+    <Banner banner={data.banner.end}/>
     
+    <Footer footer={data.footer}/>
+
+
+
   </Router>
-  );
+  )
 }
 
 export default App;

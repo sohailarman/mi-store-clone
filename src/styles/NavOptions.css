@@ -1,0 +1,16 @@
+.navOptions {
+    padding-top: 3vmax;
+    background-color: white;
+}
+
+.navInside {
+    width: 1226px;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 999;
+    padding-top: 1vmax;
+    padding-bottom: 3vmax;
+    background-color: white;
+    margin: 0 auto;
+
+}
